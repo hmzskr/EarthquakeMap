@@ -16,15 +16,6 @@ function scrollFunction() {
 	}
 }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-	document.body.scrollTop = 0;
-	document.documentElement.scrollTop = 0;
-
-	// Reset map container
-	document.getElementById('mapbox').innerHTML = '<div id="map"></div>';
-}
-
 // Retrieve selected eqarthquake url
 var dropdown = document.getElementById("selPeriod");
 dropdown.addEventListener("change", function () {
@@ -39,6 +30,16 @@ dropdown.addEventListener("change", function () {
 		top = el.offsetTop;
 	window.scrollTo(0, top)
 });
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+
+	// Reset map container
+	document.getElementById('mapbox').innerHTML = '<div id="map"></div>';
+	window.location.reload()
+}
 
 function showEarthquake(earthquakeURL) {
 
