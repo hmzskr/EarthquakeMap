@@ -2,6 +2,8 @@
 
 A front-end application that uses HTML, CSS, JavaSctipt and Leaflet.js to present an interactive visualization of earthquakes over a selected period of time (Past hour/day/7 days/30 days) and their magnitudes.
 
+![Screenshot](screenshots/EarthquakeMap.png)
+
 * Marker size and color reflect magnitude of earthquake. Earthquakes with higher magnitudes appear larger and darker in color.
 * Marker popups provide additional information about the earthquake.
 * Legend provides context for magnitude.
